@@ -83,12 +83,18 @@ function App() {
 
   return (
     <main
-      className="flex justify-center min-h-screen min-w-screen bg-mobile-hero-image bg-no-repeat bg-[#ff7979]
-    bg-cover"
+      className="flex justify-center min-h-screen min-w-screen bg-mobile-hero-image bg-no-repeat
+      bg-[#ff7979] bg-cover lg:bg-desktop-hero-image"
     >
-      <div className="flex flex-col justify-center items-center min-h-[100vh] w-[75%]">
-        <div className="text-center mb-[6.4rem]">
-          <h1 className="text-[2.8rem] text-white font-bold leading-[3.6rem] mb-[1.6rem]">
+      <div
+        className="flex flex-col justify-center items-center min-h-[100vh] w-[75%] lg:flex-row
+      lg:gap-[3rem] 2xl:gap-[5rem]"
+      >
+        <div className="text-center mb-[6.4rem] lg:w-[45%] lg:text-left 2xl:w-[35%]">
+          <h1
+            className="text-[2.8rem] text-white font-bold leading-[3.6rem] mb-[1.6rem]
+          lg:text-[4rem] lg:leading-[5rem] xl:text-[5rem]"
+          >
             Learn to code by watching others
           </h1>
           <p className="text-[1.6rem] text-white font-medium leading-[2.6rem]">
@@ -98,7 +104,7 @@ function App() {
           </p>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col xl:w-[54rem] 2xl:w-[60rem]">
           <div
             className="w-[100%] flex justify-center bg-[#5e54a4] py-[1.6rem] rounded-[1rem]
           text-center leading-[2.6rem] mb-[2.4rem] cursor-pointer shadow-shadow-bottom"
