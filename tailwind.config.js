@@ -5,6 +5,12 @@ export default {
     extend: {
       backgroundImage: {
         "mobile-hero-image": "url('/images/bg-intro-mobile.png')",
+        "desktop-hero-image": "url('/images/bg-intro-desktop.png')",
+        "error-icon": "url('/images/icon-error.svg')",
+      },
+
+      backgroundPosition: {
+        "right-2": "right 1rem center",
       },
 
       boxShadow: {
